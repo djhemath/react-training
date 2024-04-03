@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validation</title>
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      width: 200px;
+      margin: auto;
+    }
+
+    small {
+      font-size: 10px;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 align="center">Register</h1>
+
+  <form id="registration-form">
+    <div>
+      <input id="email" type="email" placeholder="Email" />
+      <small id="email-err">Email is not valid</small>
+    </div>
+
+    <div>
+      <input id="password" type="password" placeholder="Password" />
+      <small id="password-err">Password is not valid</small>
+    </div>
+
+    <div>
+      <input id="confirm-password" type="password" placeholder="Confirm Password" />
+      <small id="confirm-password-err">Passwords don't match</small>
+    </div>
+
+    <div>
+      <button id="submit-btn" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+</html>
